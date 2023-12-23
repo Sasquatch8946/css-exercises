@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  border: solid firebrick 5px;
+}
 html, body {
-  height: 100%;
+  height: 100%; 
 }
 
 body {
@@ -17,7 +20,7 @@ body {
 
 .modal {
   background: white;
-  width: 480px;
+  /*width: 480px;*/
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
@@ -33,6 +36,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .close-button {
@@ -67,3 +73,19 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.my-container {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
